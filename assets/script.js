@@ -37,9 +37,20 @@ const arrImages = [
 const containerHighlighted = document.querySelector('.highlighted');
 const containerThumbs = document.querySelector('.thumbs');
 
+
+// function render(arrImages, eleContainer) {
+// 	console.log(arrImages);
+// }
+
+// function renderHighlighted(image){
+//     return `
+        
+//     `
+// }
+
 for (let i = 0; i < arrImages.length; i++) {
-	containerHighlighted.innerHTML += `<img src="${arrImages[i]}" alt="" class="${i == 0 ? 'active' : ''}">`;
-	containerThumbs.innerHTML += `<img src="${arrImages[i]}" alt="" class="${i == 0 ? 'active' : ''}">`;
+	containerHighlighted.innerHTML += `<img src="${arrImages[i].image}" alt="" class="${i == 0 ? 'active' : ''}">`;
+	containerThumbs.innerHTML += `<img src="${arrImages[i].image}" alt="" class="${i == 0 ? 'active' : ''}">`;
 }
 
 
